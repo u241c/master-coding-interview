@@ -37,7 +37,7 @@ function logFirstTwoBoxes(boxes){
     console.log(boxes[0]); //O(1) # of operations
     console.log(boxes[1]); //O(1) # of operations
 }
-logFirstTwoBoxes(boxes) // O(2) 2 operations
+logFirstTwoBoxes(boxes); // O(2) 2 operations
 
 // Big O excersize
 // function funChallenge(input) {
@@ -72,3 +72,22 @@ logFirstTwoBoxes(boxes) // O(2) 2 operations
 //   }
 
   // 4 + 7n
+
+// (place in console)  Rule 1: worst case
+const nemo = ['nemo'];
+const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
+// creating an array (nemo) 100xs
+const large = new Array(100).fill('nemo');
+function findNemo(array) {
+    
+    for (let i = 0; i < array.length; i++){
+      console.log("running")
+        if (array[i] === 'nemo'){
+            console.log('found Nemo!');
+            break;
+        }
+      }
+    }
+    findNemo(everyone);//O(n) because we don't know if nemo is at the beginning, middle or end of the array
+
+    // Rule 2: Remove Constants
