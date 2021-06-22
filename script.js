@@ -90,4 +90,55 @@ function findNemo(array) {
     }
     findNemo(everyone);//O(n) because we don't know if nemo is at the beginning, middle or end of the array
 
-    // Rule 2: Remove Constants
+    // Rule 2: Remove Constants O(n)
+    // Rule 3: Different terms for inputs
+
+    function compressBoxesTwice(boxes, boxes2){
+      boxes.forEach(function(boxes){
+        console.log(boxes);
+      });
+      boxes2.forEach(function(boxes){
+        console.log(boxes);
+      });
+
+    }
+    O(a + b)
+    // log all pairs of array nested together loops we use *(O(n*n)) || O(n^2)
+    const boxes = ['a','b','c','d','e'];
+    function logAllPairsOfArray(array){
+      for(let i = 0; i < array.length; i++){
+      for(let j = 0; j < array.length; j++){
+        console.log(array[i], array[j])
+
+        }
+      }
+    }
+    logAllPairsOfArray(boxes)
+
+    //Rule 4: Drop non Dominants
+    // O(x^2+3x+100+x/2) becomes O(x^2)
+    
+
+    // Space Complexity
+    function boo(n){
+      for(let i = 0; i < n.length; i++){
+        console.log('boo!');
+      }
+    }
+    boo([1,2,3,4,5]) //O(1)
+
+    function arrayOfHiNTimes(n){
+        let hiArray = []
+          for (let i = 0; i < n; i++){
+            hiArray[i] = 'hi';
+          }
+          return hiArray;
+        }
+        arrayOfHiNTimes(6) //O(n)
+// Find 1st, Find Nth...
+const array = ['hi', 'my', 'teddy'];
+array[0];// O(1)
+array[array.length-1]// O(1)
+    
+    
+
