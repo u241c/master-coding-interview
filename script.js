@@ -141,4 +141,19 @@ array[0];// O(1)
 array[array.length-1]// O(1);
     
     
+const array1 = ['a', 'b', 'c', 'x'];
+const array2 = ['z', 'y', 'a'];
+function containsCommonItem(arr1, arr2){
+for (let i = 0; i < array1.length; i++){
+  for (let j = 0; j < array.length; j++){
+    if(array1[i] === array2[j]){
+      return true; 
+    }
+  }
+  }
+} return false;
 
+containsCommonItem(array1, array2);
+// time complexity for this is slow O(n^2)
+const array1 = ['a', 'b', 'c', 'x'];
+const array2 = ['z', 'y', 'a'];
