@@ -155,5 +155,26 @@ for (let i = 0; i < array1.length; i++){
 
 containsCommonItem(array1, array2);
 // time complexity for this is slow O(n^2)
+
+
 const array1 = ['a', 'b', 'c', 'x'];
 const array2 = ['z', 'y', 'a'];
+
+function containsCommonItem2(arr1, arr2){
+let map = {};
+for (let i = 0; i < arr1.length; i++){
+  if (!map[arr1[i]]) {
+    const item = arr1[i];
+    map[item] = true;
+  }
+}
+for (let j = 0; j < arr2.length; j++) {
+  if (map[array2[j]]){
+    return true;
+  }
+}
+return false
+}
+
+//0(a + b)
+containsCommonItem2(array1, array2)
