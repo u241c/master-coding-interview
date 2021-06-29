@@ -178,3 +178,27 @@ return false
 
 //0(a + b)
 containsCommonItem2(array1, array2)
+
+class Player {
+  constructor(name, type){
+    console.log(this);
+      this.name = name;
+      this.type = type;
+  }
+  introduce() {
+      console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
+  }
+}
+
+class Wizard extends Player {
+  constructor(name, type){
+    // whenever you use 'extends' you need to use 'super' to use name and type.
+    super(name, type)
+  }
+  play() {
+    console.log("Weeeee I'm a ${this.type}");
+  }
+
+}
+const wizard1 = new Wizard("Shelly", "Healer");
+const wizard2 = new Wizard("Shawn", "Dark Magic");
