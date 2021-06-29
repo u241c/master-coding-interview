@@ -202,3 +202,16 @@ class Wizard extends Player {
 }
 const wizard1 = new Wizard("Shelly", "Healer");
 const wizard2 = new Wizard("Shawn", "Dark Magic");
+
+
+//c++ practice
+// #include<iostream>
+// using namespace std;
+// int main ()
+// {
+//   int var=99;
+//   unsighned int var2=-99;
+//   cout<<var<<end1;
+//   cout<<var2<<end1;
+// return 0;
+// }
