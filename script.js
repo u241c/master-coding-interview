@@ -215,3 +215,46 @@ const wizard2 = new Wizard("Shawn", "Dark Magic");
 //   cout<<var2<<end1;
 // return 0;
 // }
+
+class MyArray { // within the myArray class will have the constructor which is the initional function
+  constructor(){ // will have to data points (length property and data property)
+    this.length = 0; // the length is 0 the amount of items the array has
+    this.data = {}; // data within the array {} is an object
+  }
+  get(index) { // get method to grab data form memory
+    return this.data[index]
+  }
+  push(item){
+    this.data[this.length] = item;
+    this.length++
+    return this.length
+  }
+  pop(){
+    const lastItem = this.data[this.length-1];
+    delete this.data[this.length-1];
+    this.length--;
+    return lastItem;
+  }
+
+  delete(index){
+    const item = this.data[index];
+    this.shiftItems(index);
+  }
+  shiftItems(index){
+    for(let i = index; i < this.length - 1; i++)
+    {
+    this.data[i] = this.data[i+1];
+    }
+    delete this.data[this.length-1];
+    this.length--;
+}
+}
+const newArray = new MyArray(); //to instantiate or copy the class
+newArray.push("Hi");
+newArray.push('you');
+newArray.push('!');
+newArray.delete(0);
+newArray.push('are');
+newArray.push('nice');
+newArray.delete(1);
+console.log(newArray);
