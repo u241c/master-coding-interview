@@ -258,3 +258,11 @@ newArray.push('are');
 newArray.push('nice');
 newArray.delete(1);
 console.log(newArray);
+
+// creating a functinthe reverses a string:
+// "hi my name is Frank"
+// "knarF si eman ih"
+
+function reverse(str) {
+  
+}
