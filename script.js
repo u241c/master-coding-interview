@@ -326,6 +326,17 @@ function mergeSortedArrays(arr1, arr2);{
   if (array2.length === 0){
     return array1;
   }
+  while (array1Item || array2Item){
+    if (array1Item < array2Item) {
+      mergedArray.push(array1Item)
+      array1Item = array[i];
+      i++;
+    }else{ 
+      mergedArray.push(array2Item);
+      array2Item = array2[j];
+      j++;
+    }
+  }
 
   return mergedArray;
 }
