@@ -331,3 +331,32 @@ function mergeSortedArrays(arr1, arr2);{
 }
 
 mergeSortedArrays([0,3,4,31], [4,6,30]);
+
+// Danyah's C++
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+// int first,second;
+// cout<<"Enter two Numbers"<<end1;
+// cin>>first>>second;
+// if( first > second )
+// {
+// cout<<"First number is greater which is = " <<first<<end1;
+// }
+// return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+// int first,second;
+// cout<<"Enter two Numbers"<<end1;
+// cin>>first>>second;
+// if( first > second )
+// {
+//   cout<<" First number is greater which is = "<<first<<end1;
+// }
+// return 0;
+// }
