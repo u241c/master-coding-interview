@@ -313,4 +313,21 @@ const reverse3 = str => str.split('').reverse().join('');
 
 reverse('Hi my name is Frank')
 
+// merging sorted arrays
+function mergeSortedArrays(arr1, arr2);{
+  const mergedArray = [];
+  let array1Item = array1[0];
+  let array2Item = array2[0];
 
+  //check input
+  if (array1.length === 0){
+    return array2;
+  }
+  if (array2.length === 0){
+    return array1;
+  }
+
+  return mergedArray;
+}
+
+mergeSortedArrays([0,3,4,31], [4,6,30]);
