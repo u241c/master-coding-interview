@@ -441,3 +441,66 @@ myGraph.showConnections();
 // 4-->3 2 5 
 // 5-->4 6 
 // 6-->5
+
+
+class HashTable {
+  constructor(size){
+    this.data = new Array(size);
+    [['grapes', 100000]]
+  }
+  _hash(key){
+    let hash = 0;
+    for (let i =0; i < key.length; i++){
+      hash = (hash + key.charCodeAt(i) * i) %
+      this.data.length
+    }
+    return hash;
+  }
+  set (key, value){
+    let address = this._hash(key);
+    if (!this.data[address]){
+    this.data[address] = [];
+    this.data[address].push([key, value])
+    console.log(this.data)
+  }
+  this.data[address].push([key, value])
+  return this.data
+  }
+
+  get(key){
+    let address = this._hash(key);
+    const currentBucket = this.data[address];
+    if (currentBucket.lenght){
+      for(let i = 0; i < currentBucket.length; i++)
+      {
+        if(currentBucket[i][0] === key){
+          return currentBucket[i][1]
+        }
+      }  
+    }
+    return undefined
+  }
+}
+const myHashTable = new HashTable(50);
+myHashTable.set('grapes', 10000);
+myHashTable.get('grapes', 54);
+myHashTable.get('grapes');
+
+// c++
+#include<iostream>
+using namespace std;
+int main()
+{
+int first,second;
+cout<<"Enter two numbers"<<end1;
+cin>>first>>second;
+if ( first > second )
+{
+cout<<"First number is greater= "<<first<<end1;
+{
+else
+}
+cout<<"second number is greater"<<second<<end1;
+}
+return 0;
+}
